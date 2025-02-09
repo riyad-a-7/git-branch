@@ -12,6 +12,7 @@
 # git remote -v
 # git pull
 
+# git branch
 def Sums(user_input1, user_input2):
     from time import sleep
     print("iki ededin toplenmasi:")
@@ -19,7 +20,15 @@ def Sums(user_input1, user_input2):
     sleep(1)
     return f"{user_input1} + {user_input2} = {user_input1 + user_input2}"
 
-if __name__ == "__main__":
-    user_input1 = int(input("Birinci ededi daxil edin: "))
-    user_input2 = int(input("Ikinci ededi daxil edin: "))
-    print(Sums(user_input1, user_input2))
+def Subs(user_input1, user_input2):
+    from time import sleep
+    print("iki ededin cixilmasi:")
+    print("calcutation...")
+    sleep(1)
+    return f"{user_input1} - {user_input2} = {user_input1 - user_input2}"
+
+user_input1 = int(input("Birinci ededi daxil edin: "))
+user_input2 = int(input("Ikinci ededi daxil edin: "))
+print(Sums(user_input1, user_input2))
+
+
