@@ -1,23 +1,14 @@
-from flask import Flask, render_template, request, redirect, url_for
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return render_template('login.html')
-
-@app.route('/login', methods=['POST'])
-def login():
-    username = request.form['username']
-    password = request.form['password']
-    if username == 'admin' and password == 'password':
-        return redirect(url_for('success'))
-    else:
-        return redirect(url_for('home'))
-
-@app.route('/success')
-def success():
-    return "Login successful!"
-
-if __name__ == '__main__':
-    app.run(debug=True)
+# git branch
+# git switch
+# git merge
+# git branch -d
+# git reset commit_code
+# git reset --hard commit_code
+# git stash
+# git clone
+# git branch -U main
+# git push origin main
+# git set-url origin <link>
+# git remote -v
+# git pull
+print("Hello World")
